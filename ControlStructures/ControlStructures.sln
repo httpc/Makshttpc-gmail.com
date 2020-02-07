@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Power", "Power\Power.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NestedFor", "NestedFor\NestedFor.vcxproj", "{C6D6F9E0-9D7C-44CD-85A0-0B752655293A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geometry", "Geometry\Geometry.vcxproj", "{18822381-BBBB-4D31-9C3A-A9307D16DEA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{C6D6F9E0-9D7C-44CD-85A0-0B752655293A}.Release|x64.Build.0 = Release|x64
 		{C6D6F9E0-9D7C-44CD-85A0-0B752655293A}.Release|x86.ActiveCfg = Release|Win32
 		{C6D6F9E0-9D7C-44CD-85A0-0B752655293A}.Release|x86.Build.0 = Release|Win32
+		{18822381-BBBB-4D31-9C3A-A9307D16DEA9}.Debug|x64.ActiveCfg = Debug|x64
+		{18822381-BBBB-4D31-9C3A-A9307D16DEA9}.Debug|x64.Build.0 = Debug|x64
+		{18822381-BBBB-4D31-9C3A-A9307D16DEA9}.Debug|x86.ActiveCfg = Debug|Win32
+		{18822381-BBBB-4D31-9C3A-A9307D16DEA9}.Debug|x86.Build.0 = Debug|Win32
+		{18822381-BBBB-4D31-9C3A-A9307D16DEA9}.Release|x64.ActiveCfg = Release|x64
+		{18822381-BBBB-4D31-9C3A-A9307D16DEA9}.Release|x64.Build.0 = Release|x64
+		{18822381-BBBB-4D31-9C3A-A9307D16DEA9}.Release|x86.ActiveCfg = Release|Win32
+		{18822381-BBBB-4D31-9C3A-A9307D16DEA9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
