@@ -3,19 +3,14 @@ using namespace std;
 
 void main()
 {
+	setlocale(LC_ALL, "");
 	const int SIZE = 5;
-	int arr[SIZE] = { 3, 5, 8 };
+	int arr[SIZE];
 
-	//Ввод элементов массива с клавиатуры:
-	/*cout << "Input values of elements (" << SIZE << " numbers): ";
+	//Заполнение массива случайными числами:
 	for (int i = 0; i < SIZE; i++)
 	{
-		cin >> arr[i];
-	}*/
-
-	for (int i = 0; i < SIZE; i++)
-	{
-		arr[i] = rand()%100;
+		arr[i] = rand() % 100+50;
 	}
 
 	//Вывод массива на экран:
@@ -25,10 +20,25 @@ void main()
 	}
 	cout << endl;
 
-	//Вывод массива на экран в обратном порядке:
-	for (int i = SIZE - 1; i >= 0; i--)
+	//Подсчет суммы элементов массива:
+	int sum = 0;
+	for (int i = 0; i < SIZE; i++)
 	{
-		cout << arr[i] << "\t";
+		sum += arr[i];
 	}
-	cout << endl;
+	cout << "Сумма элементов массива: " << sum << endl;
+	cout << "Среднее арифметическое элементов массива: " << sum/(double)SIZE << endl;
+	
+	//Поиск минимального и максимального значения в массиве:
+	int min, max;
+	min = max = arr[0];
+	for (int i = 0; i < SIZE; i++)
+	{
+		if (arr[i] < min)
+			min = arr[i];
+		if (arr[i] > max)
+			max = arr[i];
+	}
+	cout << "Минимальное значение в массиве: " << min << endl;
+	cout << "Максимальное значение в массиве: " << max << endl;
 }
