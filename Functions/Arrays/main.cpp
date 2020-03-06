@@ -32,7 +32,7 @@ void main()
 	Sort(brr, m);
 	Print(brr, m);
 
-	
+
 	int A[ROWS][COLS];
 	FillRand(A, ROWS, COLS);
 	Print(A, ROWS, COLS);
@@ -54,7 +54,7 @@ void FillRand(double arr[], const int n)
 	//cout << typeid(arr).name() << endl;
 	for (int i = 0; i < n; i++)
 	{
-		arr[i] = double(rand() % 100)/10;
+		arr[i] = double(rand() % 100) / 10;
 		//arr[i] /= 10;
 	}
 }
@@ -93,7 +93,7 @@ void Print(int arr[ROWS][COLS], const int ROWS, const int COLS)
 	{
 		for (int j = 0; j < COLS; j++)
 		{
-			cout << arr[i][j] <<"\t";
+			cout << arr[i][j] << "\t";
 		}
 		cout << endl;
 	}
@@ -104,7 +104,7 @@ void Sort(int arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = i+1; j < n; j++)
+		for (int j = i + 1; j < n; j++)
 		{
 			if (arr[j] < arr[i])
 			{
@@ -120,7 +120,7 @@ void Sort(double arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = i+1; j < n; j++)
+		for (int j = i + 1; j < n; j++)
 		{
 			if (arr[j] < arr[i])
 			{
@@ -139,9 +139,19 @@ void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS)
 	{
 		for (int j = 0; j < COLS; j++)
 		{
-			for (int k = 0; k < ROWS; k++)
+			for (int k = i; k < ROWS; k++)
 			{
-				for (int l = 0; l < COLS; l++)
+				/*int l;
+				if (k == i)
+				{
+					l = j + 1;
+				}
+				else
+				{
+					l = 0;
+				}*/
+				// condition ? value1 : value2;
+				for (int l = k == i ? j + 1 : 0; l < COLS; l++)
 				{
 					if (arr[k][l] < arr[i][j])
 					{

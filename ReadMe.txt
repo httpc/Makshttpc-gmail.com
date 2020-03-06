@@ -3,7 +3,7 @@ https://github.com/okovtun/ST_PV_36a
 
 TODO:
 0. Выучить конспект!!!!!!!!!!!!!
-
+1. http://cplusplus.com/doc/tutorial/functions2/
 
 Написать функции для двумерных массивов типа int и double:
 1. FillRand - заполняет массив случайными числами;
