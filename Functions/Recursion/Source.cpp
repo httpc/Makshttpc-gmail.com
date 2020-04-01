@@ -6,7 +6,7 @@ using std::endl;
 void elevator(int floor);
 int factorial(int n);
 double power(double a, int n);
-int fib(int n);
+void fib(int n, int a = 0, int b = 1);
 
 void main()
 {
@@ -17,8 +17,8 @@ void main()
 	elevator(floor);
 	cout << factorial(5) << endl;*/
 	int n;
-	cin >> n;
-	cout << fib(n);
+	cout << "¬ведите общее количество чисел ‘ибоначчи: "; cin >> n;
+	fib(n);
 }
 void elevator(int floor)
 {
@@ -45,9 +45,9 @@ double power(double a, int n)
 		return power(a, n - 1) * a;
 	}
 }
-int fib(int n)
+void fib(int n, int a, int b)
 {
-	if (n < 1) return 0;
-	if (n == 1) return 1;
-	return fib(n - 1) + fib(n - 2);
+	if (0==n) return ;
+	cout << a << ' ';
+	fib(n - 1, b, a + b);
 }
